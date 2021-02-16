@@ -47,7 +47,7 @@ defmodule Identicon do
       grid
       |> Enum.map fn({_code, index}) ->
         horizontal = rem(index, 5) * 50
-        vertical = div(index, 5) * 5
+        vertical = div(index, 5) * 50
         top_left = {horizontal, vertical}
         bottom_right = {horizontal + 50, vertical + 50}
         {top_left, bottom_right}
